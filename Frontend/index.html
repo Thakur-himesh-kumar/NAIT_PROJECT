@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML Elements Assignment</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f9f9f9; }
+        header, section, footer { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        form { display: grid; gap: 15px; max-width: 500px; }
+        .form-group { display: flex; flex-direction: column; }
+        .form-inline { display: flex; gap: 10px; align-items: center; }
+        input[type="text"], input[type="email"], input[type="password"], select, textarea { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px; background-color: #0056b3; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #004085; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Component -->
+    <header>
+        <h1>Main Webpage Heading (H1)</h1>
+        <h2>Sub-heading Level 2 (H2)</h2>
+        <p>This paragraph introduces the assignment. It showcases basic text formatting like <strong>bold text</strong>, <em>italicized text</em>, and <mark>highlighted text</mark>.</p>
+    </header>
+
+    <!-- Blockquotes and Formatting Section -->
+    <section>
+        <h3>Text Elements & Quotes (H3)</h3>
+        <p>Here is an example of a long blockquote used for citations:</p>
+        <blockquote cite="https://w3.org">
+            "HTML is the standard markup language for documents designed to be displayed in a web browser."
+        </blockquote>
+        <p>You can also use computer code tags like <code>console.log("Hello World");</code> or represent keyboard shortcuts like <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+        
+        <h4>Unordered and Ordered Lists (H4)</h4>
+        <ul>
+            <li>First item in an unordered list</li>
+            <li>Second item in an unordered list</li>
+        </ul>
+        <ol>
+            <li>First item in a sequential ordered list</li>
+            <li>Second item in a sequential ordered list</li>
+        </ol>
+    </section>
+
+    <!-- Data Table Section -->
+    <section>
+        <h3>Structured Data Table</h3>
+        <p>This table summarizes common software development stack roles:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Role</th>
+                    <th>Primary Skillset</th>
+                    <th>Experience Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Frontend Developer</td>
+                    <td>HTML, CSS, React</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Backend Developer</td>
+                    <td>Node.js, SQL, Python</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>DevOps Engineer</td>
+                    <td>Docker, AWS, CI/CD</td>
+                    <td>Expert</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Roles Tracked: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Interactive Form Section -->
+    <section>
+        <h3>User Registration Form</h3>
+        <form action="#" method="POST">
+            
+            <!-- Text Input -->
+            <div class="form-group">
+                <label for="username">Full Name:</label>
+                <input type="text" id="username" name="username" placeholder="John Doe" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- Dropdown Select Menu -->
+            <div class="form-group">
+                <label for="track">Select Assignment Track:</label>
+                <select id="track" name="track">
+                    <option value="web">Web Development</option>
+                    <option value="mobile">Mobile Applications</option>
+                    <option value="devops">DevOps Systems</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="form-group">
+                <label>Preferred Learning Mode:</label>
+                <div class="form-inline">
+                    <input type="radio" id="online" name="mode" value="online" checked>
+                    <label for="online">Online</label>
+                    <input type="radio" id="offline" name="mode" value="offline">
+                    <label for="offline">In-Person</label>
+                </div>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <div class="form-inline">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I accept the assignment submission terms</label>
+                </div>
+            </div>
+
+            <!-- Text Area -->
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Type notes here..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Assignment Data</button>
+        </form>
+    </section>
+
+    <!-- Media and Structural Footer -->
+    <footer>
+        <h3>Hyperlinks and Media</h3>
+        <p>Visit the official <a href="https://w3schools.com" target="_blank">W3Schools Documentation</a> for additional tag references.</p>
+        <p>Placeholder Image Element:</p>
+        <img src="https://placeholder.com" alt="Sample Assignment Placeholder Image">
+        <br><br>
+        <small>&copy; 2026 Academic Assignment Submission Portal. All Rights Reserved.</small>
+    </footer>
+
+</body>
+</html>
